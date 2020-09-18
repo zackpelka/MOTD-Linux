@@ -1,0 +1,37 @@
+#!/bin/bash
+# Description:UpdateMotd by screenFetch
+# References: http://goo.gl/xpWV7L
+# 2015/07/08 @ysaotome
+
+FILE_MOTD='/etc/motd'
+ 
+BIN_DATE='/bin/date'
+BIN_FIGLET='/usr/bin/figlet'
+BIN_HOSTNAME='/bin/hostname'
+BIN_IP='/sbin/ip'
+BIN_GREP='/bin/grep'
+BIN_SED='/bin/sed'
+BIN_UPTIME='/usr/bin/uptime'
+BIN_CAT='/bin/cat'
+BIN_UNAME='/bin/uname'
+BIN_FREE='/usr/bin/free'
+BIN_HEAD='/usr/bin/head'
+BIN_TAIL='/usr/bin/tail'
+BIN_DF='/bin/df'
+BIN_AWK='/bin/awk'
+BIN_BC='/usr/bin/bc'
+BIN_PS='/bin/ps'
+BIN_SCREENFETCH='/usr/local/bin/screenfetch'
+ 
+COLOR_LIGHT_GREEN='\033[1;32m'
+COLOR_LIGHT_BLUE='\033[1;34m'
+COLOR_YELLOW='\033[1;33m'
+COLOR_RED='\033[0;31m'
+COLOR_WHITE='\033[1;37m'
+COLOR_DEFAULT='\033[0m'
+ 
+echo -e "
+
+$(${BIN_SCREENFETCH})
+
+" > ${FILE_MOTD}
