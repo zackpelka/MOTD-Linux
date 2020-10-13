@@ -1,2 +1,2 @@
 # MOTD
-Message of the Day for Linux
+The "Message Of The Day" (MOTD) for MULTIPLE versions of Linux
