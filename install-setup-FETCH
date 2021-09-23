@@ -5,10 +5,11 @@ sudo /usr/bin/wget --no-check-certificate -P /usr/local/bin/ 'https://gist.githu
 sudo /bin/chmod 755 /usr/local/bin/update_motd_by_screenfetch.sh
 sudo /usr/local/bin/update_motd_by_screenfetch.sh
 
-# Edit your CRON
+# Edit your CRONTAB
 
-sudo /bin/cat << _UPDATEMOTD_ > /etc/cron.d/update-motd
+sudo crontab -e
 
 #update-moted
 */5 * * * * root /usr/local/bin/update_motd_by_screenfetch.sh
+@reboot /ust/local/bin/update_botd_by_screenfetch.sh
 
