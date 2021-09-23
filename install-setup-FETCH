@@ -6,10 +6,9 @@ sudo /bin/chmod 755 /usr/local/bin/update_motd_by_screenfetch.sh
 sudo /usr/local/bin/update_motd_by_screenfetch.sh
 
 # Edit your CRONTAB
+# Update - MOTD every 5 mins, and at reboot with Scrfeenfetch.sh
 
 sudo crontab -e
 
-#update-moted
 */5 * * * * root /usr/local/bin/update_motd_by_screenfetch.sh
 @reboot /ust/local/bin/update_botd_by_screenfetch.sh
-
